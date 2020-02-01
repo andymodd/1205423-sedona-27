@@ -11,7 +11,6 @@
 
     <header>
 	      <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип сайта">
-	    </a>
       <nav>
 	      <ul>
 		      <li><a href="information.html">Информация</a></li>
@@ -24,8 +23,6 @@
 
     <main>
 	    <h1>Седона</h1>
-      <!--Здесь поменял заголовок, поскольку тот заголовок как и слоган (абзац ниже) относится к приветствующей картинке. По всей видимости, слоган уберу тоже-->
-	    <p>"Because the Grand Canyon sucks!"</p>
 	    <img src="img/intro-welcome.svg" width="459" height="353" alt="Логотип приветствия">
 
 	    <section>
@@ -85,21 +82,25 @@
         <form action="" method="post">
           <p>
             <label for="arrival">Дата заезда:</label>
-            <input id="arrival" type="date" name="arrival-date" placeholder="дд.мм.гггг" pattern="[0-9]{2}.[0-9]{2}.[0-9]{4}" title="Используйте формат дд.мм.гггг">
+            <input id="arrival" type="text" name="arrival-date">
             <button type="button"><img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря"></button>
           </p>
           <p>
             <label for="leaving">Дата выезда:</label>
-            <input id="leaving" type="date" name="leaving-date" placeholder="дд.мм.гггг" pattern="[0-9]{2}.[0-9]{2}.[0-9]{4}" title="Используйте формат дд.мм.гггг">
+            <input id="leaving" type="text" name="leaving-date">
             <button type="button"><img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря"></button>
           </p>
           <p>
             <label for="adult">Взрослые:</label>
-            <input id="adult" type="number" name="adult-amount">
+            <input id="adult" type="text" name="adult-amount">
+            <button type="button">+</button>
+            <button type="button">-</button>
           </p>
           <p>
             <label for="child">Дети:</label>
-            <input id="child" type="number" name="child-amount">
+            <input id="child" type="text" name="child-amount">
+            <button type="button">+</button>
+            <button type="button">-</button>
           </p>
           <button type="submit">Найти</button>
         </form>
