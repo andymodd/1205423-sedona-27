@@ -10,7 +10,6 @@
   <body>
 
     <header>
-	    <a href="index.html">
 	      <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип сайта">
 	    </a>
       <nav>
@@ -82,20 +81,17 @@
 	      <h2>Выбор гостиницы</h2>
 	      <p>Заинтересовались?</p>
 	      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <!--Предполагаю, что данная ссылка (в действительности кнопка при правильно работающим JS) будет переводить на сайт с формой поиска гостиницы-->
-	      <a href="search-form.html">Поиск гостиницы в Седоне</a>
-        <form action="" method="get">
+	      <button type="button">Поиск гостиницы в Седоне</button>
+        <form action="" method="post">
           <p>
             <label for="arrival">Дата заезда:</label>
-            <input id="arrival" type="date" name="arrival-date">
-            <!--Добавил иконку календаря, на которую потом будет наложено событие при нажатии (ТЗ 3.12)-->
-            <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря">
+            <input id="arrival" type="date" name="arrival-date" placeholder="дд.мм.гггг" pattern="[0-9]{2}.[0-9]{2}.[0-9]{4}" title="Используйте формат дд.мм.гггг">
+            <button type="button"><img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря"></button>
           </p>
           <p>
             <label for="leaving">Дата выезда:</label>
-            <input id="leaving" type="date" name="leaving-date">
-            <!--Добавил иконку календаря, на которую потом будет наложено событие при нажатии (ТЗ 3.12)-->
-            <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря">
+            <input id="leaving" type="date" name="leaving-date" placeholder="дд.мм.гггг" pattern="[0-9]{2}.[0-9]{2}.[0-9]{4}" title="Используйте формат дд.мм.гггг">
+            <button type="button"><img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря"></button>
           </p>
           <p>
             <label for="adult">Взрослые:</label>
@@ -105,13 +101,11 @@
             <label for="child">Дети:</label>
             <input id="child" type="number" name="child-amount">
           </p>
-          <!--Пришел к выводу, что ссылкой здесь воспользоваться не могу, поскольку кнопка абсолютно определяет гостиницы по параметрам, введенным выше. Поэтому не вижу смысла пользоваться здесь ссылкой и переходить на страницу гостиниц при неработающем JS. Если использовать здесь ссылку для перехода на страницу гостиниц Седоны, то фильтр тогда вообще никак заимодействован не будет-->
           <button type="submit">Найти</button>
         </form>
 	    </section>
 
       <section>
-        <!--Обновил пока секцию с картой Седоны, добавив изображение и заголовок-->
         <h2>Расположение города на карте</h2>
         <p>
           <img src="img/map.png" width="1200" height="593" alt="город Седона на карте">
@@ -129,7 +123,6 @@
 		    <a href="">Facebook</a>
 		    <a href="">Youtube</a>
 	    </div>
-      <!--Добавил ссылку логотипу html academy согласно ТЗ-->
 	    <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип html academy"></a></p>
 	  </footer>
   </body>
