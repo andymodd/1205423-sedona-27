@@ -27,14 +27,82 @@
 
       <section class="search-form">
         <h2>Фильтр поиска</h2>
-        <!--Здесь будет форма-->
-		    <p>Найдено:</p>
-		    <p>Сортировка:</p>
-		    <ul>
-		      <li>По цене</li>
-		      <li>По Типу</li>
-		      <li>По рейтингу</li>
-		    </ul>
+        <form action="" method="post">
+          <fieldset>
+            <legend>Инрафструктура:</legend>
+            <ul>
+              <li>
+                <input id="swimming" type="checkbox" name="swimming-pool">
+                <label for="swimming">Бассейн</label>
+              </li>
+              <li>
+                <input id="parking-place" type="checkbox" name="parking">
+                <label for="parking-place">Парковка</label>
+              </li>
+              <li>
+                <input id="wi-fi-internet" type="checkbox" name="wi-fi">
+                <label for="wi-fi-internet">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input id="hotel" type="checkbox" name="hotels">
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li>
+                <input id="motel" type="checkbox" name="motels">
+                <label for="motel">Мотель</label>
+              </li>
+              <li>
+                <input id="appartment" type="checkbox" name="appartments">
+                <label for="appartment">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <ul>
+              <li>
+                <label class="visually-hidden" for="min-cost">Минимальная стоимость</label>
+                <input id="min-cost" type="text" name="min-of-range">
+              </li>
+              <li>
+                <label class="visually-hidden" for="max-cost">Максимальная стоимость</label>
+                <input id="max-cost" type="text" name="max-of-range">
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <label class="visually-hidden" for="cost-from">Стоимость от</label>
+                <input id="cost-from" type="range" min="0" max="9600" name="cost-from" step="100">
+              </li>
+              <li>
+                <label class="visually-hidden" for="cost-to">Стоимость до</label>
+                <input id="cost-to" type="range" min="100" max="10000" name="cost-to" step="100">
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+		    <p>Найдено: 3</p>
+		    <p>Сортировка:
+		      <ul>
+		        <li><button type="button">По цене</button></li>
+		        <li><button type="button">По Типу</button></li>
+		        <li><button type="button">По рейтингу</button></li>
+		      </ul>
+          <ul>
+            <li>
+              <button type="button"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Иконка сортировки от большего к меньшему"></button>
+            </li>
+            <li>
+              <button type="button"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Иконка сортировки от меньшего к большему"></button>
+            </li>
+          </ul>
+        </p>
       </section>
 
       <section class="hotels-list">
@@ -47,7 +115,6 @@
             <p>От 4000 Р.</p>
             <p>Рейтинг: 8,5</p>
             <p>4 звезды</p>
-            <!--Оставил данные ссылки ссылками, потому что считаю, что при нажатии на них пользователь должен перейти на другие страницы, которые либо расскажут ему о гостинице, либо позволит сделать бронь номера (может быть, это будет один заглавный сайт отеля)-->
             <a href="">Подробнее</a>
             <a href="">Забронировать</a>
           </li>
@@ -58,7 +125,6 @@
             <p>От 3000 Р.</p>
             <p>Рейтинг: 8,9</p>
             <p>3 звезды</p>
-            <!--Оставил данные ссылки ссылками, потому что считаю, что при нажатии на них пользователь должен перейти на другие страницы, которые либо расскажут ему о гостинице, либо позволит сделать бронь номера (может быть, это будет один заглавный сайт отеля)-->
             <a href="">Подробнее</a>
             <a href="">Забронировать</a>
           </li>
@@ -69,7 +135,6 @@
             <p>От 2000 Р.</p>
             <p>Рейтинг: 9,2</p>
             <p>2 звезды</p>
-            <!--Оставил данные ссылки ссылками, потому что считаю, что при нажатии на них пользователь должен перейти на другие страницы, которые либо расскажут ему о гостинице, либо позволит сделать бронь номера (может быть, это будет один заглавный сайт отеля)-->
             <a href="">Подробнее</a>
             <a href="">Забронировать</a>
           </li>
