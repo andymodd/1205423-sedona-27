@@ -76,8 +76,8 @@ a {
 
 .welcomesedona {
   background-color: #f2f2f2;
-  background-image: url("../img/background-photo.jpg"),
-                    url("../img/polygon,svg");
+  background-image: url("../img/polygon,svg"),
+                    url("../img/background-photo.jpg");
   background-position: top center, bottom center;
   background-repeat: no-repeat;
 }
