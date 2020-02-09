@@ -28,6 +28,7 @@ body {
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+  text-align: center;
   text-transform: uppercase;
 
   background-color: #F2F2F2;
@@ -50,16 +51,11 @@ a {
 .main-navigation {
   line-height: 26px;
 }
-/*
-.polygon {
-  height: 59px;
-  background: url("../img/polygon.svg") no-repeat bottom center;
-}
-*/
+
 .site-navigation {
   list-style: none;
-
   background-color: #FFFFFF;
+  text-align: left;
 }
 
 .site-navigation a {
@@ -78,36 +74,60 @@ a {
   color: #766357;
 }
 
-.paragraphs-container {
-  text-align: center;
-  line-height: 26px;
-
-  background-color: #FFFFFF;
+.welcomesedona {
+  background-color: #f2f2f2;
+  background-image: url("../img/background-photo.jpg"),
+                    url("../img/polygon,svg");
+  background-position: top center, bottom center;
+  background-repeat: no-repeat;
 }
 
-.paragraphs-container p:first-child {
+.paragraphs {
+  background-color: #ffffff;
+}
+
+.paragraph-1 {
   font-size: 21px;
+  line-height: 26px;
 }
 
-.paragraphs-container p:last-child {
+.paragraph-2 {
   font-size: 14px;
   font-weight: normal;
+  line-height: 26px;
 }
 
-.search-container {
-  background-color: #FFFFFF;
-  text-align: center;
-}
-
-.search-container p:first-child {
+.paragraph-3 {
   font-size: 30px;
   line-height: 36px;
 }
 
-.search-container p:last-of-type {
+.paragraph-4 {
   font-size: 14px;
   line-height: 24px;
+  font-weight: normal;
 }
+
+.reasons-list {
+  list-style: none;
+}
+
+.reasons-list .additions-list {
+  list-style: inherit;
+}
+/* Тут я что-то разогнался и начал делать дополнительное задание. Пока остановился на этом
+.reasons-list .reasons-heading {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.reasons-list .slogan {
+  font-weight: normal;
+  line-height: 21px;
+  color: #ffffff;
+}
+*/
 
 .search-button {
   font-size: 21px;
@@ -115,71 +135,18 @@ a {
   color: #FFFFFF;
 
   background-color: #766357;
-
 }
 
 .search-form {
   display: none;
 }
 
-
-.socials-item div {
-  width: 46px;
-  height: 48px;
-
-  background-color: #81b3d2;
+.main-footer {
+  text-align: left;
 }
 
-.socials-item:first-child div {
-  background-image: url("../img/twitter.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.socials-item:nth-child(2) div {
-  background-image: url("../img/facebook.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.socials-item:last-child div {
-  background-image: url("../img/youtube.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.socials-item:first-child div:hover {
-  background-color: #669ec0;
-}
-
-.socials-item:nth-child(2) div:hover {
-  background-color: #669ec0;
-}
-
-.socials-item:last-child div:hover {
-  background-color: #669ec0;
-}
-
-.socials-item:first-child div:active {
-  background-image: url("../img/twitter-changed-fill.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #5496bd;
-}
-
-.socials-item:nth-child(2) div:active {
-  background-image: url("../img/facebook-changed-fill.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #5496bd;
-}
-
-.socials-item:last-child div:active {
-  background-image: url("../img/youtube-changed-fill.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #5496bd;
-
+.main-footer .socials-list {
+  list-style: none;
 }
 
 .footer-contacts {
@@ -192,90 +159,64 @@ a {
   font-weight: normal;
 }
 
-.socials-item {
-
-}
-
-.socials-item .items {
-  display: block;
-  width: 46px;
-  height: 48px;
-
+.socials-item .link {
   font-size: 0px;
-
-  background-color: #81b3d2;
+  color: #ffffff;
+  fill: currentcolor;
 }
 
-.socials-item .twitter {
-  background-image: url("../img/twitter.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.socials-item .facebook {
-  background-image: url("../img/facebook.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.socials-item .youtube {
-  background-image: url("../img/youtube.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.socials-item .items:hover {
+.socials-item .link:hover {
   background-color: #669ec0;
 }
 
-.socials-item .twitter:active {
-  background-image: url("../img/twitter-changed-fill.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #5496bd;
-}
-
-.socials-item .facebook:active {
-  background-image: url("../img/facebook-changed-fill.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #5496bd;
-}
-
-.socials-item .youtube:active {
-  background-image: url("../img/youtube-changed-fill.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #5496bd;
-
+.socials-item .link:active {
+  color: #5496bd;
+  background-color: currentcolor;
+  fill: currentcolor;
 }
 
 .made-by .logo-htmlacademy {
   vertical-align: middle;
-  color: currentcolor;
 }
 
 .made-by a:hover {
-  fill: #81b3d2;
+  color: #81b3d2;
+  fill: currentcolor;
 }
 
 .made-by a:active {
-  fill: #bdbbbc;
+  color: #bdbbbc;
+  fill: currentcolor;
 }
 
-.hotels-list {
+.buttons-list {
   list-style: none;
+  text-align: left;
+}
 
+.updown-list {
+  list-style: none;
+  text-align: left;
+}
+
+
+.hotels-list {
+  text-align: left;
+  list-style: none;
   background-color: #FEFEFE;
 }
 
-.hotels-preview h3 {
+.picking {
+  text-align: left;
+}
+
+.hotels-preview .hotels-heading {
   font-size: 21px;
   line-height: 26px;
   text-align: left;
 }
 
-.hotels-preview p:not(:first-of-type) {
+.hotels-preview .hotels-information {
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
@@ -283,42 +224,41 @@ a {
   color: #333333;
 }
 
-.hotels-preview p:nth-of-type(4) {
+.hotels-preview .rating {
   color: #666666;
-  text-align: center;
 
   background-color: #F2F2F2;
 }
 
-.hotels-preview a:first-of-type {
+.hotels-preview .additions-button {
   line-height: 21px;
   color: #FFFFFF;
 
   background-color: #81B3D2;
 }
 
-.hotels-preview a:first-of-type:hover {
+.hotels-preview .additions-button:hover {
   background-color: #669EC0;
 }
 
-.hotels-preview a:first-of-type:active {
+.hotels-preview .additions-button:active {
   color: #88B6D1;
 
   background-color: #5496BD;
 }
 
-.hotels-preview a:last-of-type {
+.hotels-preview .reserve-button {
   line-height: 21px;
   color: #FFFFFF;
 
   background-color: #766357;
 }
 
-.hotels-preview a:last-of-type:hover {
+.hotels-preview .reserve-button:hover {
   background-color: #604E43;
 }
 
-.hotels-preview a:last-of-type:active {
+.hotels-preview .reserve-button:active {
   color: #81746D;
   background-color: #503E33;
 }
