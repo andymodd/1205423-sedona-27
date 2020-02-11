@@ -50,9 +50,12 @@ a {
 }
 
 .main-header {
+  position: relative;
 }
 
 .main-header .logo {
+  position: absolute;
+  left: 530px;
 }
 
 .main-navigation {
@@ -62,6 +65,7 @@ a {
 .site-navigation {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -73,12 +77,22 @@ a {
 }
 
 .site-navigation .site-link {
-  padding: 15px 70px;
-  width: 100px;
+  width: 20%;
+  padding: 15px 0;
+  outline-color: blue;
+  outline-style: solid;
 }
 
 .site-navigation .site-link:nth-child(n+3) {
   text-align: right;
+}
+
+.site-navigation .site-link:first-child {
+  margin-left: 6%;
+}
+
+.site-navigation .site-link:last-child {
+  margin-right: 6%;
 }
 
 .site-navigation .site-link:nth-child(3) {
