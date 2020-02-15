@@ -81,19 +81,17 @@ a {
   padding: 15px 0;
 }
 
-.site-navigation .site-link:nth-child(n+3) {
-  text-align: right;
-}
-
 .site-navigation .site-link:nth-child(4n+1) {
   margin-left: 72px;
 }
 
 .site-navigation .site-link:nth-child(4n+4) {
+  text-align: right;
   margin-right: 72px;
 }
 
 .site-navigation .site-link:nth-child(4n+3):not(:last-child) {
+  text-align: right;
   margin-left: auto;
 }
 
