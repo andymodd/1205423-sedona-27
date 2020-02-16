@@ -199,7 +199,139 @@ a {
 }
 
 .search-form {
-  display: none;
+  width:458px;
+  min-height: 285px;
+  margin: 0 auto;
+  padding: 55px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  font-size: 14px;
+  line-height: 26px;
+  text-align: left;
+
+  background-color: #ffffff;
+}
+
+.search-form .arrival-date {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 30px;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.search-form .leaving-date {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 30px;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.arrival-date .calendar-button,
+.leaving-date .calendar-button {
+  position: absolute;
+  top: 8px;
+  right: 9px;
+}
+
+.arrival-date input,
+.leaving-date input {
+  width: 346px;
+  height: 38px;
+}
+
+.adult-amount input,
+.child-amount input {
+  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
+  margin-left: 38px;
+  margin-right: 38px;
+}
+
+.adult-amount input {
+  margin-right: 41px;
+}
+
+.adult-amount .plus-button {
+  position: absolute;
+  right: 3px;
+  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
+}
+
+.child-amount .plus-button {
+  position: absolute;
+  right: 0;
+  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
+}
+
+.adult-amount .minus-button {
+  position: absolute;
+  left: 112px;
+  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
+}
+
+.child-amount .minus-button {
+  position: absolute;
+  left: 115px;
+  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
+}
+
+.search-form .adult-amount {
+  position: relative;
+
+  margin: 0;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.adult-amount input {
+}
+
+.child-amount label {
+  margin-left: 50px;
+}
+
+.search-form .child-amount {
+  position: relative;
+
+  margin: 0;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.search-form button[type="submit"] {
+  margin-top: 54px;
+  width: 100%;
+  height: 58px;
+
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+
+  background-color: #81b3d2;
 }
 
 .sedona-on-the-map p {
