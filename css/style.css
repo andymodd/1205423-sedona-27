@@ -85,15 +85,15 @@ a {
   text-align: right;
 }
 
-.site-navigation .site-link:first-child {
+.site-navigation .site-link:nth-child(4n+1) {
   margin-left: 72px;
 }
 
-.site-navigation .site-link:last-child {
+.site-navigation .site-link:nth-child(4n+4) {
   margin-right: 72px;
 }
 
-.site-navigation .site-link:nth-child(3) {
+.site-navigation .site-link:nth-child(4n+3):not(:last-child) {
   margin-left: auto;
 }
 
@@ -116,6 +116,7 @@ a {
 .welcome-sedona {
   min-height: 442px;
   padding-top: 76px;
+  padding-bottom: 59px;
 
   background-color: #f2f2f2;
   background-image: url("../img/polygon.svg"),
