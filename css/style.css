@@ -572,6 +572,10 @@ a {
   margin-bottom: 8px;
 }
 
+ .stars-amount svg {
+  vertical-align: bottom;
+}
+
 .wrapper-container-2 {
   display: flex;
   flex-direction: row;
