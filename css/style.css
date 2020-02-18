@@ -49,6 +49,8 @@ a {
   text-decoration: none;
 }
 
+/*Стили навигации*/
+
 .main-header {
   position: relative;
 }
@@ -678,10 +680,47 @@ a {
 }
 
 .reasons-item .reasons-item-container {
-  min-height: 256px;
-  width: 400px;
+  width: 280px;
+  padding: 0 60px;
+  padding-top: 47px;
+  padding-bottom: 61px;
 
   background-color: #81b3d2;
+}
+
+.reasons-item .reasons-item-container:last-of-type {
+  width: 304px;
+  padding: 0 48px;
+  padding-top: 47px;
+  padding-bottom: 61px;
+
+  background-color: #81b3d2;
+}
+
+.reasons-item-container .reasons-heading {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 21px;
+
+  font-size: 21px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.reasons-item-container .slogan {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 21px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.reasons-item-container .slogan:last-child {
+  margin:0;
+  padding: 0;
 }
 
 .reasons-item .image-of-city {
@@ -707,9 +746,31 @@ a {
   width: 400px;
   margin: 0;
   padding: 0;
-  min-height: 330px;
+  padding-top: 161px;
+  min-height: 169px;
 
   background-color: #ffffff;
+}
+
+.additions-item .additions-heading {
+  margin: 0;
+  padding: 0;
+}
+
+.additions-list .icon-1 {
+  background-image: url("../img/icon-1.svg");
+  background-position: 162px 61px;
+  background-repeat: no-repeat;
+}
+.additions-list .icon-2 {
+  background-image: url("../img/icon-2.svg");
+  background-position: 163px 61px;
+  background-repeat: no-repeat;
+}
+.additions-list .icon-3 {
+  background-image: url("../img/icon-3.svg");
+  background-position: 168px 56px;
+  background-repeat: no-repeat;
 }
 
 .reasons-list .reasons-item:nth-child(2) {
