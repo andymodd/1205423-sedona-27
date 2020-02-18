@@ -207,7 +207,6 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: flex-start;
 
   font-size: 14px;
   line-height: 26px;
@@ -253,28 +252,34 @@ a {
 
 .arrival-date .calendar-button:hover,
 .leaving-date .calendar-button:hover,
-.child-amount .plus-button:hover,
-.adult-amount .plus-button:hover,
-.child-amount .minus-button:hover,
-.adult-amount .minus-button:hover {
+.child-amount-container .plus-button:hover,
+.adult-amount-container .plus-button:hover,
+.child-amount-container .minus-button:hover,
+.adult-amount-container .minus-button:hover {
   color: #000000;
   fill: currentcolor;
 }
 
 .arrival-date .calendar-button:active,
 .leaving-date .calendar-button:active,
-.child-amount .plus-button:active,
-.adult-amount .plus-button:active,
-.child-amount .minus-button:active,
-.adult-amount .minus-button:active {
+.child-amount-container .plus-button:active,
+.adult-amount-container .plus-button:active,
+.child-amount-container .minus-button:active,
+.adult-amount-container .minus-button:active {
   color: #81b3d2;
   fill: currentcolor;
+}
+
+.arrival-date label,
+.leaving-date label {
+  width: 112px;
 }
 
 .arrival-date input,
 .leaving-date input {
   width: 346px;
   height: 38px;
+  box-sizing: border-box;
   padding-left: 13px;
   border: none;
 
@@ -298,14 +303,13 @@ a {
   outline: solid #e5e5e5;
 }
 
-.adult-amount input,
-.child-amount input {
+.adult-amount-container input,
+.child-amount-container input {
   box-sizing: border-box;
   width: 38px;
   height: 38px;
-  margin-left: 38px;
-  margin-right: 38px;
   border: none;
+
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -315,14 +319,7 @@ a {
   background-color: #f2f2f2;
 }
 
-.adult-amount input {
-  margin-right: 41px;
-}
-
-.adult-amount .plus-button {
-  position: absolute;
-  right: 3px;
-
+.adult-amount-container .plus-button {
   box-sizing: border-box;
   width: 38px;
   height: 38px;
@@ -334,10 +331,7 @@ a {
 
 }
 
-.child-amount .plus-button {
-  position: absolute;
-  right: 0;
-
+.child-amount-container .plus-button {
   box-sizing: border-box;
   width: 38px;
   height: 38px;
@@ -348,10 +342,7 @@ a {
   background-color: #f2f2f2;
 }
 
-.adult-amount .minus-button {
-  position: absolute;
-  left: 112px;
-
+.adult-amount-container .minus-button {
   box-sizing: border-box;
   width: 38px;
   height: 38px;
@@ -362,10 +353,7 @@ a {
   background-color: #f2f2f2;
 }
 
-.child-amount .minus-button {
-  position: absolute;
-  left: 115px;
-
+.child-amount-container .minus-button {
   box-sizing: border-box;
   width: 38px;
   height: 38px;
@@ -377,27 +365,42 @@ a {
 }
 
 .search-form .adult-amount {
-  position: relative;
-
   margin: 0;
   width: 50%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: baseline;
+}
+
+.adult-amount label {
+  width: 112px;
 }
 
 .child-amount label {
-  margin-left: 50px;
+  width: 88px;
+  text-align: right;
+}
+
+.adult-amount-container {
+  width: calc(100%-112px);
+  display: flex;
+  flex-direction: row;
+  margin-right: 3px;
 }
 
 .search-form .child-amount {
-  position: relative;
-
   margin: 0;
   width: 50%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: baseline;
+  justify-content: space-between;
+}
+
+.child-amount-container {
+  width: calc(100%-112px);
+  display: flex;
+  flex-direction: row;
 }
 
 .search-form button[type="submit"] {
