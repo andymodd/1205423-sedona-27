@@ -382,7 +382,7 @@ a {
 }
 
 .adult-amount-container {
-  width: calc(100%-112px);
+  width: 114px;
   display: flex;
   flex-direction: row;
   margin-right: 3px;
@@ -398,7 +398,7 @@ a {
 }
 
 .child-amount-container {
-  width: calc(100%-112px);
+  width: 114px;
   display: flex;
   flex-direction: row;
 }
