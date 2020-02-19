@@ -164,20 +164,6 @@ a {
   font-weight: normal;
 }
 
-/* Тут я что-то разогнался и начал делать дополнительное задание. Пока остановился на этом
-.reasons-list .reasons-heading {
-  font-size: 21px;
-  line-height: 21px;
-  color: #ffffff;
-}
-
-.reasons-list .slogan {
-  font-weight: normal;
-  line-height: 21px;
-  color: #ffffff;
-}
-*/
-
 .search-button {
   margin: 0 auto;
   padding: 30px;
@@ -743,18 +729,32 @@ a {
 }
 
 .additions-list .additions-item {
-  width: 400px;
+  width: 284px;
   margin: 0;
-  padding: 0;
+  padding: 0 58px;
   padding-top: 161px;
-  min-height: 169px;
+  padding-bottom: 81px;
 
   background-color: #ffffff;
 }
 
 .additions-item .additions-heading {
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
+
+  font-size: 21px;
+  line-height: 21px;
+
+}
+
+.additions-item .slogan {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .additions-list .icon-1 {
