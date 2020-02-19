@@ -137,6 +137,184 @@ a {
   background-color: #ffffff;
 }
 
+/*Стили для секции пяти причин посещения города*/
+
+.reasons .reasons-list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: : flex-start;
+
+  list-style: none;
+}
+
+.reasons-list .reasons-item:first-child {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.reasons-item .reasons-item-container {
+  width: 280px;
+  padding: 0 60px;
+  padding-top: 35px;
+  padding-bottom: 53px;
+  background-color: #81b3d2;
+}
+
+.reasons-item:nth-child(2) .reasons-item-container {
+  width: 304px;
+  padding: 0 48px;
+  padding-top: 36px;
+  padding-bottom: 52px;
+}
+
+.reasons-item:nth-child(2) .image-of-city {
+  width: 800px;
+  margin: 0;
+  order: -1;
+}
+
+.reasons-item-container .reasons-heading {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.reasons-item-container .slogan {
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.reasons-item-container .slogan:last-child {
+  margin-bottom: 0;
+}
+
+.reasons-item .image-of-city {
+  margin: 0;
+  padding: 0;
+}
+
+.image-of-city img {
+  vertical-align: middle;
+}
+
+.reasons-item .additions-list {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  list-style: inherit;
+}
+
+.additions-list .additions-item:first-child {
+  padding-top: 133px;
+  padding-bottom: 81px;
+  width: 255px;
+  padding-left: 73px;
+  padding-right: 72px;
+
+  background-color: #ffffff;
+}
+
+.additions-list .additions-item:nth-child(2) {
+  padding-top: 133px;
+  padding-bottom: 81px;
+  width: 284px;
+  padding-left: 58px;
+  padding-right: 58px;
+
+  background-color: #ffffff;
+}
+
+.additions-list .additions-item:last-child {
+  padding-top: 133px;
+  padding-bottom: 81px;
+  width: 273px;
+  padding-left: 64px;
+  padding-right: 63px;
+
+  background-color: #ffffff;
+}
+
+.additions-item .additions-heading {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.additions-item .slogan {
+  margin-bottom: 0;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.additions-list .icon-1 {
+  background-image: url("../img/icon-1.svg");
+  background-position: 162px 61px;
+  background-repeat: no-repeat;
+}
+.additions-list .icon-2 {
+  background-image: url("../img/icon-2.svg");
+  background-position: 163px 61px;
+  background-repeat: no-repeat;
+}
+.additions-list .icon-3 {
+  background-image: url("../img/icon-3.svg");
+  background-position: 168px 56px;
+  background-repeat: no-repeat;
+}
+
+.reasons-list .reasons-item:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+}
+
+.reasons-list .small-reasons-item {
+  width: 208px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  padding-left: 95px;
+  padding-right: 97px;
+
+  background-color: #eeeeee;
+}
+
+.small-reasons-item .reasons-heading {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.small-reasons-item .slogan {
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+}
+
+.reasons-list .small-reasons-item:nth-last-of-type(2) {
+  width: 262px;
+  padding-left: 69px;
+  padding-right: 69px;
+}
+
+.reasons-list .small-reasons-item:last-child {
+  width: 246px;
+  padding-left: 77px;
+  padding-right: 77px;
+}
+
+.small-reasons-item .slogan:last-child {
+  margin-bottom: 0;
+}
+
 .visit-sedona {
   padding-top: 27px;
 
@@ -422,99 +600,6 @@ a {
   padding: 0;
 }
 
-.main-footer {
-  padding: 36px 0;
-
-  text-align: left;
-
-  background-color: #ffffff;
-}
-
-.main-footer-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 1056px;
-  margin: 0 auto;
-}
-
-.main-footer .socials-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  width: 400px;
-
-  list-style: none;
-}
-
-.socials-list .socials-item:not(:last-child) {
-  margin-right: 6px;
-}
-
-.socials-list .socials-item {
-  height: 48px;
-  width: 46px;
-}
-
-.footer-contacts {
-  margin: 0;
-  padding-left: 52px;
-  width: 276px;
-
-  font-size: 21px;
-  line-height: 26px;
-}
-
-.main-footer .made-by {
-  margin: 0;
-  padding-left: 100px;
-  width: 228px;
-
-  line-height: 26px;
-  font-weight: normal;
-}
-
-.socials-item .link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-
-  font-size: 0px;
-  color: #ffffff;
-  fill: currentcolor;
-
-  background-color: #81b3d2;
-}
-
-.socials-item .link:hover {
-  background-color: #669ec0;
-}
-
-.socials-item .link:active {
-  color: #88b6d1;
-
-  background-color: #5496bd;
-  fill: currentcolor;
-}
-
-.made-by .logo-htmlacademy {
-  vertical-align: middle;
-}
-
-.made-by a:hover {
-  color: #81b3d2;
-  fill: currentcolor;
-}
-
-.made-by a:active {
-  color: #bdbbbc;
-  fill: currentcolor;
-}
-
 .buttons-list {
   list-style: none;
   text-align: left;
@@ -524,7 +609,6 @@ a {
   list-style: none;
   text-align: left;
 }
-
 
 .hotels-list {
   margin: 0;
@@ -651,148 +735,97 @@ a {
   background-color: #503E33;
 }
 
-.reasons .reasons-list {
-  margin: 0;
-  padding: 0;
-  min-height: 1098px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+/*Стили подвала страницы*/
 
-  list-style: none;
-}
+.main-footer {
+  padding: 36px 0;
 
-.reasons-list .reasons-item:first-child {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  min-height: 586px;
-}
-
-.reasons-item .reasons-item-container {
-  width: 280px;
-  padding: 0 60px;
-  padding-top: 47px;
-  padding-bottom: 61px;
-
-  background-color: #81b3d2;
-}
-
-.reasons-item .reasons-item-container:last-of-type {
-  width: 304px;
-  padding: 0 48px;
-  padding-top: 47px;
-  padding-bottom: 61px;
-
-  background-color: #81b3d2;
-}
-
-.reasons-item-container .reasons-heading {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 21px;
-
-  font-size: 21px;
-  line-height: 21px;
-  color: #ffffff;
-}
-
-.reasons-item-container .slogan {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 21px;
-
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  color: #ffffff;
-}
-
-.reasons-item-container .slogan:last-child {
-  margin:0;
-  padding: 0;
-}
-
-.reasons-item .image-of-city {
-  margin: 0;
-  padding: 0;
-}
-
-.image-of-city img {
-  vertical-align: middle;
-}
-
-.reasons-item .additions-list {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-
-  list-style: inherit;
-}
-
-.additions-list .additions-item {
-  width: 284px;
-  margin: 0;
-  padding: 0 58px;
-  padding-top: 161px;
-  padding-bottom: 81px;
+  text-align: left;
 
   background-color: #ffffff;
 }
 
-.additions-item .additions-heading {
-  margin: 0;
-  margin-bottom: 20px;
-  padding: 0;
-
-  font-size: 21px;
-  line-height: 21px;
-
-}
-
-.additions-item .slogan {
-  margin: 0;
-  padding: 0;
-
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-}
-
-.additions-list .icon-1 {
-  background-image: url("../img/icon-1.svg");
-  background-position: 162px 61px;
-  background-repeat: no-repeat;
-}
-.additions-list .icon-2 {
-  background-image: url("../img/icon-2.svg");
-  background-position: 163px 61px;
-  background-repeat: no-repeat;
-}
-.additions-list .icon-3 {
-  background-image: url("../img/icon-3.svg");
-  background-position: 168px 56px;
-  background-repeat: no-repeat;
-}
-
-.reasons-list .reasons-item:nth-child(2) {
+.main-footer-container {
   display: flex;
   flex-direction: row;
-  min-height: 256px;
+  align-items: center;
+  width: 1056px;
+  margin: 0 auto;
 }
 
-.reasons-item:nth-child(2) .image-of-city {
-  width: 800px;
+.main-footer .socials-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
-  order: -1;
+  padding: 0;
+  width: 400px;
+
+  list-style: none;
 }
 
-.reasons-list .small-reasons-item {
-  width: 400px;
-  min-height: 256px;
+.socials-list .socials-item:not(:last-child) {
+  margin-right: 6px;
+}
 
-  background-color: #eeeeee;
+.socials-list .socials-item {
+  height: 48px;
+  width: 46px;
+}
+
+.footer-contacts {
+  margin: 0;
+  padding-left: 52px;
+  width: 276px;
+
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.main-footer .made-by {
+  margin: 0;
+  padding-left: 100px;
+  width: 228px;
+
+  line-height: 26px;
+  font-weight: normal;
+}
+
+.socials-item .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  font-size: 0px;
+  color: #ffffff;
+  fill: currentcolor;
+
+  background-color: #81b3d2;
+}
+
+.socials-item .link:hover {
+  background-color: #669ec0;
+}
+
+.socials-item .link:active {
+  color: #88b6d1;
+
+  background-color: #5496bd;
+  fill: currentcolor;
+}
+
+.made-by .logo-htmlacademy {
+  vertical-align: middle;
+}
+
+.made-by a:hover {
+  color: #81b3d2;
+  fill: currentcolor;
+}
+
+.made-by a:active {
+  color: #bdbbbc;
+  fill: currentcolor;
 }
