@@ -49,6 +49,8 @@ a {
   text-decoration: none;
 }
 
+/*Стили навигации*/
+
 .main-header {
   position: relative;
 }
@@ -81,6 +83,11 @@ a {
   padding: 15px 0;
 }
 
+.site-navigation .site-link:nth-child(4n+3) {
+  text-align: right;
+  margin-left: 96px;
+}
+
 .site-navigation .site-link:nth-child(4n+1) {
   margin-left: 72px;
 }
@@ -88,11 +95,11 @@ a {
 .site-navigation .site-link:nth-child(4n+4) {
   text-align: right;
   margin-right: 72px;
+
 }
 
-.site-navigation .site-link:nth-child(4n+3):not(:last-child) {
+.site-navigation .site-link:nth-child(4n+3) {
   text-align: right;
-  margin-left: auto;
 }
 
 .site-navigation a {
@@ -162,27 +169,6 @@ a {
   font-weight: normal;
 }
 
-.reasons-list {
-  list-style: none;
-}
-
-.reasons-list .additions-list {
-  list-style: inherit;
-}
-/* Тут я что-то разогнался и начал делать дополнительное задание. Пока остановился на этом
-.reasons-list .reasons-heading {
-  font-size: 21px;
-  line-height: 21px;
-  color: #ffffff;
-}
-
-.reasons-list .slogan {
-  font-weight: normal;
-  line-height: 21px;
-  color: #ffffff;
-}
-*/
-
 .search-button {
   margin: 0 auto;
   padding: 30px;
@@ -196,8 +182,239 @@ a {
   background-color: #766357;
 }
 
+.search-button:hover {
+  background-color: #604e43;
+}
+
+.search-button:active {
+  color: #857871;
+
+  background-color: #503e33;
+}
+
 .search-form {
-  display: none;
+  width:458px;
+  min-height: 285px;
+  margin: 0 auto;
+  padding: 55px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  font-size: 14px;
+  line-height: 26px;
+  text-align: left;
+
+  background-color: #ffffff;
+}
+
+.search-form .arrival-date {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 30px;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.search-form .leaving-date {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 30px;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.arrival-date .calendar-button,
+.leaving-date .calendar-button {
+  position: absolute;
+  top: 8px;
+  right: 9px;
+
+  color: #cacaca;
+  fill: currentcolor;
+
+  background-color: transparent;
+  border: none;
+}
+
+.arrival-date .calendar-button:hover,
+.leaving-date .calendar-button:hover,
+.child-amount-container .plus-button:hover,
+.adult-amount-container .plus-button:hover,
+.child-amount-container .minus-button:hover,
+.adult-amount-container .minus-button:hover {
+  color: #000000;
+  fill: currentcolor;
+}
+
+.arrival-date .calendar-button:active,
+.leaving-date .calendar-button:active,
+.child-amount-container .plus-button:active,
+.adult-amount-container .plus-button:active,
+.child-amount-container .minus-button:active,
+.adult-amount-container .minus-button:active {
+  color: #81b3d2;
+  fill: currentcolor;
+}
+
+.arrival-date label,
+.leaving-date label {
+  width: 112px;
+}
+
+.arrival-date input,
+.leaving-date input {
+  width: 346px;
+  height: 38px;
+  box-sizing: border-box;
+  padding-left: 13px;
+  border: none;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+
+}
+
+.arrival-date input:hover,
+.leaving-date input:hover {
+  background-color: #ebebeb;
+}
+
+.arrival-date input:focus,
+.leaving-date input:focus {
+  background-color: #ffffff;
+  outline: solid #e5e5e5;
+}
+
+.adult-amount-container input,
+.child-amount-container input {
+  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
+  border: none;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+}
+
+.adult-amount-container .plus-button {
+  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
+  border: none;
+
+  color: #a9a9a9;
+
+  background-color: #f2f2f2;
+
+}
+
+.child-amount-container .plus-button {
+  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
+  border: none;
+
+  color: #a9a9a9;
+
+  background-color: #f2f2f2;
+}
+
+.adult-amount-container .minus-button {
+  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
+  border: none;
+
+  color: #a9a9a9;
+
+  background-color: #f2f2f2;
+}
+
+.child-amount-container .minus-button {
+  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
+  border: none;
+
+  color: #a9a9a9;
+
+  background-color: #f2f2f2;
+}
+
+.search-form .adult-amount {
+  margin: 0;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.adult-amount label {
+  width: 112px;
+}
+
+.child-amount label {
+  width: 88px;
+  text-align: right;
+}
+
+.adult-amount-container {
+  width: 114px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 3px;
+}
+
+.search-form .child-amount {
+  margin: 0;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.child-amount-container {
+  width: 114px;
+  display: flex;
+  flex-direction: row;
+}
+
+.search-form button[type="submit"] {
+  margin-top: 54px;
+  width: 100%;
+  height: 58px;
+
+  font-size: 21px;
+  text-transform: uppercase;
+  line-height: 26px;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.search-form button[type="submit"]:hover {
+  background-color: #669ec0;
+}
+
+.search-form button[type="submit"]:active {
+  background-color: #5496bd;
 }
 
 .sedona-on-the-map p {
@@ -335,24 +552,23 @@ a {
   top: 30px;
   left: 72px;
 }
-
-.whole-wrapper-container  {
-  width: 892px;
-  min-height: 90px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
+/*Убрал justify-content: space-between; у whole-wrapper-container и добавил нижний отступ wrapper-container-1 и 2, равный 8px
+И вообще думаю, что тут можно обойтись без whole-wrapper-container*/
 .wrapper-container-1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+ .stars-amount svg {
+  vertical-align: bottom;
 }
 
 .wrapper-container-2 {
   display: flex;
   flex-direction: row;
+  margin-bottom: 8px;
 }
 
 .wrapper-container-2 .hotels-information:first-child {
@@ -433,4 +649,150 @@ a {
 .hotels-preview .reserve-button:active {
   color: #81746D;
   background-color: #503E33;
+}
+
+.reasons .reasons-list {
+  margin: 0;
+  padding: 0;
+  min-height: 1098px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.reasons-list .reasons-item:first-child {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 586px;
+}
+
+.reasons-item .reasons-item-container {
+  width: 280px;
+  padding: 0 60px;
+  padding-top: 47px;
+  padding-bottom: 61px;
+
+  background-color: #81b3d2;
+}
+
+.reasons-item .reasons-item-container:last-of-type {
+  width: 304px;
+  padding: 0 48px;
+  padding-top: 47px;
+  padding-bottom: 61px;
+
+  background-color: #81b3d2;
+}
+
+.reasons-item-container .reasons-heading {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 21px;
+
+  font-size: 21px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.reasons-item-container .slogan {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 21px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.reasons-item-container .slogan:last-child {
+  margin:0;
+  padding: 0;
+}
+
+.reasons-item .image-of-city {
+  margin: 0;
+  padding: 0;
+}
+
+.image-of-city img {
+  vertical-align: middle;
+}
+
+.reasons-item .additions-list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  list-style: inherit;
+}
+
+.additions-list .additions-item {
+  width: 284px;
+  margin: 0;
+  padding: 0 58px;
+  padding-top: 161px;
+  padding-bottom: 81px;
+
+  background-color: #ffffff;
+}
+
+.additions-item .additions-heading {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  font-size: 21px;
+  line-height: 21px;
+
+}
+
+.additions-item .slogan {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.additions-list .icon-1 {
+  background-image: url("../img/icon-1.svg");
+  background-position: 162px 61px;
+  background-repeat: no-repeat;
+}
+.additions-list .icon-2 {
+  background-image: url("../img/icon-2.svg");
+  background-position: 163px 61px;
+  background-repeat: no-repeat;
+}
+.additions-list .icon-3 {
+  background-image: url("../img/icon-3.svg");
+  background-position: 168px 56px;
+  background-repeat: no-repeat;
+}
+
+.reasons-list .reasons-item:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  min-height: 256px;
+}
+
+.reasons-item:nth-child(2) .image-of-city {
+  width: 800px;
+  margin: 0;
+  order: -1;
+}
+
+.reasons-list .small-reasons-item {
+  width: 400px;
+  min-height: 256px;
+
+  background-color: #eeeeee;
 }
