@@ -27,79 +27,91 @@
 	  <main>
 	    <h1 class="visually-hidden">Отели и гостиницы Седоны</h1>
 
-      <section>
+      <section class="search-filtr">
         <h2 class="visually-hidden">Фильтр поиска</h2>
-        <form class="search-form" action="" method="post">
-          <fieldset>
+        <form class="search-filtr-form" action="" method="post">
+          <fieldset class="fieldset-checkbox">
             <legend>Инрафструктура:</legend>
-            <ul>
-              <li>
-                <input id="swimming" type="checkbox" name="swimming-pool">
-                <label for="swimming">Бассейн</label>
+            <ul class="search-filtr-list">
+              <li class="search-filtr-list-item">
+                <label for="swimming">
+                  <input class="visually-hidden" id="swimming" type="checkbox" name="swimming-pool">
+                  Бассейн<span class="checkbox-indicator">Выбрать</span>
+                </label>
               </li>
-              <li>
-                <input id="parking-place" type="checkbox" name="parking">
-                <label for="parking-place">Парковка</label>
+              <li class="search-filtr-list-item">
+                <label for="parking-place">
+                  <input class="visually-hidden" id="parking-place" type="checkbox" name="parking">
+                  Парковка<span class="checkbox-indicator">Выбрать</span>
+                </label>
               </li>
-              <li>
-                <input id="wi-fi-internet" type="checkbox" name="wi-fi">
-                <label for="wi-fi-internet">Wi-Fi</label>
+              <li class="search-filtr-list-item">
+                <label for="wi-fi-internet">
+                  <input class="visually-hidden" id="wi-fi-internet" type="checkbox" name="wi-fi">
+                  Wi-Fi<span class="checkbox-indicator">Выбрать</span>
+                </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="fieldset-checkbox">
             <legend>Тип жилья:</legend>
-            <ul>
-              <li>
-                <input id="hotel" type="checkbox" name="hotels">
-                <label for="hotel">Гостиница</label>
+            <ul class="search-filtr-list">
+              <li class="search-filtr-list-item">
+                <label for="hotel">
+                  <input class="visually-hidden" id="hotel" type="checkbox" name="hotels">
+                  Гостиница<span class="checkbox-indicator">Выбрать</span>
+                </label>
               </li>
-              <li>
-                <input id="motel" type="checkbox" name="motels">
-                <label for="motel">Мотель</label>
+              <li class="search-filtr-list-item">
+                <label for="motel">
+                  <input class="visually-hidden" id="motel" type="checkbox" name="motels">
+                  Мотель<span class="checkbox-indicator">Выбрать</span>
+                </label>
               </li>
-              <li>
-                <input id="appartment" type="checkbox" name="appartments">
-                <label for="appartment">Апартаменты</label>
+              <li class="search-filtr-list-item">
+                <label for="appartment">
+                  <input class="visually-hidden" id="appartment" type="checkbox" name="appartments">
+                  Апартаменты<span class="checkbox-indicator">Выбрать</span>
+                </label>
               </li>
             </ul>
           </fieldset>
           <fieldset>
             <legend>Стоимость в сутки (Р):</legend>
-            <ul>
-              <li>
+            <ul class="search-filtr-list">
+              <li class="search-filtr-list-item">
                 <label class="visually-hidden" for="min-cost">Минимальная стоимость</label>
                 <input id="min-cost" type="text" name="min-of-range">
               </li>
-              <li>
+              <li class="search-filtr-list-item">
                 <label class="visually-hidden" for="max-cost">Максимальная стоимость</label>
                 <input id="max-cost" type="text" name="max-of-range">
               </li>
             </ul>
-            <ul>
-              <li>
+            <ul class="search-filtr-list">
+              <li class="search-filtr-list-item">
                 <label class="visually-hidden" for="cost-from">Стоимость от</label>
                 <input id="cost-from" type="range" min="0" max="9600" name="cost-from" step="100">
               </li>
-              <li>
+              <li class="search-filtr-list-item">
                 <label class="visually-hidden" for="cost-to">Стоимость до</label>
                 <input id="cost-to" type="range" min="100" max="10000" name="cost-to" step="100">
               </li>
             </ul>
+            <button type="submit">Показать</button>
           </fieldset>
-          <button type="submit">Показать</button>
         </form>
         <div class="picking">
-		      <p>Найдено: 3</p>
-		      <p>Сортировка:
+		      <p class="search-results">Найдено: 3</p>
+		      <p class="sorting">Сортировка:
 		        <ul class="buttons-list">
-		          <li><button type="button">По цене</button></li>
-		          <li><button type="button">По Типу</button></li>
-		          <li><button type="button">По рейтингу</button></li>
+		          <li class="buttons-list-item"><button type="button">По цене</button></li>
+		          <li class="buttons-list-item"><button type="button">По Типу</button></li>
+		          <li class="buttons-list-item"><button type="button">По рейтингу</button></li>
 		        </ul>
             <ul class="updown-list">
-              <li><button type="button"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Иконка сортировки от большего к меньшему"></button></li>
-              <li><button type="button"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Иконка сортировки от меньшего к большему"></button></li>
+              <li class="updown-list-item"><button type="button"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Иконка сортировки от большего к меньшему"></button></li>
+              <li class="updown-list-item"><button type="button"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Иконка сортировки от меньшего к большему"></button></li>
             </ul>
           </p>
         </div>
