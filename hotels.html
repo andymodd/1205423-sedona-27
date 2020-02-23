@@ -30,70 +30,70 @@
       <section class="search-filtr">
         <h2 class="visually-hidden">Фильтр поиска</h2>
         <form class="search-filtr-form" action="" method="post">
-          <fieldset class="fieldset-checkbox">
-            <legend>Инрафструктура:</legend>
-            <ul class="search-filtr-list">
-              <li class="search-filtr-list-item">
-                <label for="swimming">
+          <fieldset class="group-checkbox group">
+            <legend class="group-name">Инрафструктура:</legend>
+            <ul class="checkbox-list">
+              <li class="checkbox-list-item">
+                <label class="checkbox-name" for="swimming">
                   <input class="visually-hidden" id="swimming" type="checkbox" name="swimming-pool">
                   Бассейн<span class="checkbox-indicator">Выбрать</span>
                 </label>
               </li>
-              <li class="search-filtr-list-item">
-                <label for="parking-place">
+              <li class="checkbox-list-item">
+                <label class="checkbox-name" for="parking-place">
                   <input class="visually-hidden" id="parking-place" type="checkbox" name="parking">
                   Парковка<span class="checkbox-indicator">Выбрать</span>
                 </label>
               </li>
-              <li class="search-filtr-list-item">
-                <label for="wi-fi-internet">
+              <li class="checkbox-list-item">
+                <label class="checkbox-name" for="wi-fi-internet">
                   <input class="visually-hidden" id="wi-fi-internet" type="checkbox" name="wi-fi">
                   Wi-Fi<span class="checkbox-indicator">Выбрать</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="fieldset-checkbox">
-            <legend>Тип жилья:</legend>
-            <ul class="search-filtr-list">
-              <li class="search-filtr-list-item">
-                <label for="hotel">
+          <fieldset class="group-checkbox group">
+            <legend class="group-name">Тип жилья:</legend>
+            <ul class="checkbox-list">
+              <li class="checkbox-list-item">
+                <label class="checkbox-name" for="hotel">
                   <input class="visually-hidden" id="hotel" type="checkbox" name="hotels">
                   Гостиница<span class="checkbox-indicator">Выбрать</span>
                 </label>
               </li>
-              <li class="search-filtr-list-item">
-                <label for="motel">
+              <li class="checkbox-list-item">
+                <label class="checkbox-name" for="motel">
                   <input class="visually-hidden" id="motel" type="checkbox" name="motels">
                   Мотель<span class="checkbox-indicator">Выбрать</span>
                 </label>
               </li>
-              <li class="search-filtr-list-item">
-                <label for="appartment">
+              <li class="checkbox-list-item">
+                <label class="checkbox-name" for="appartment">
                   <input class="visually-hidden" id="appartment" type="checkbox" name="appartments">
                   Апартаменты<span class="checkbox-indicator">Выбрать</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Стоимость в сутки (Р):</legend>
-            <ul class="search-filtr-list">
-              <li class="search-filtr-list-item">
+          <fieldset class="group-range group">
+            <legend class="group-name">Стоимость в сутки (Р):</legend>
+            <ul class="minmax-input-list">
+              <li class="minmax-input-list-item">
                 <label class="visually-hidden" for="min-cost">Минимальная стоимость</label>
                 <input id="min-cost" type="text" name="min-of-range">
               </li>
-              <li class="search-filtr-list-item">
+              <li class="minmax-input-list-item">
                 <label class="visually-hidden" for="max-cost">Максимальная стоимость</label>
                 <input id="max-cost" type="text" name="max-of-range">
               </li>
             </ul>
-            <ul class="search-filtr-list">
-              <li class="search-filtr-list-item">
+            <ul class="range-input-list">
+              <li class="range-input-list-item">
                 <label class="visually-hidden" for="cost-from">Стоимость от</label>
-                <input id="cost-from" type="range" min="0" max="9600" name="cost-from" step="100">
+                <input multiple id="cost-from" type="range" min="0" max="9600" name="cost-from" step="100">
               </li>
-              <li class="search-filtr-list-item">
+              <li class="range-input-list-item">
                 <label class="visually-hidden" for="cost-to">Стоимость до</label>
                 <input id="cost-to" type="range" min="100" max="10000" name="cost-to" step="100">
               </li>
