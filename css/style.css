@@ -661,6 +661,7 @@ a {
   width: 133px;
   height: 32px;
   border: 2px solid #ffffff;
+  border-radius: 4px;
   margin: 0 auto;
   margin-top: 24px;
 
@@ -668,6 +669,7 @@ a {
   color: inherit;
   line-height: inherit;
   text-transform: inherit;
+  
   background-color: transparent;
 }
 
