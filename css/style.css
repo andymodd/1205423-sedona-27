@@ -350,6 +350,7 @@ a {
   margin: 0 auto;
   padding: 30px;
   width: 568px;
+  border: none;
 
   font-size: 21px;
   line-height: 26px;
@@ -577,6 +578,7 @@ a {
   margin-top: 54px;
   width: 100%;
   height: 58px;
+  border: none;
 
   font-size: 21px;
   text-transform: uppercase;
@@ -661,7 +663,7 @@ a {
   width: 133px;
   height: 32px;
   border: 2px solid #ffffff;
-  border-radius: 4px;
+  border-radius: 2px;
   margin: 0 auto;
   margin-top: 24px;
 
@@ -669,8 +671,13 @@ a {
   color: inherit;
   line-height: inherit;
   text-transform: inherit;
-  
+
   background-color: transparent;
+}
+
+.group-range button[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .range-input-list-item input {
@@ -730,6 +737,7 @@ a {
   border-radius: 4px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
 
 }
 
@@ -763,6 +771,17 @@ input[type="checkbox"]:checked + .checkbox-indicator {
 
 .buttons-list .buttons-list-item:not(.last-child) {
   margin-right: 33px;
+}
+
+.buttons-list-item button[type="button"] {
+  border: none;
+
+
+  background: transparent;
+}
+
+.buttons-list-item button[type="button"]:hover {
+  color: #
 }
 
 .updown-list {
