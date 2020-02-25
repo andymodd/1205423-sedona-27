@@ -734,6 +734,14 @@ a {
 }
 
 
+.first-slider:hover,
+.second-slider:hover {
+  top: -11px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
 .group-range button[type="submit"] {
   box-sizing: border-box;
   display: block;
