@@ -394,6 +394,7 @@ a {
   position: absolute;
   z-index: 1;
   left: 316px;
+  
   width:458px;
   min-height: 285px;
   padding: 55px;
@@ -405,6 +406,7 @@ a {
   line-height: 26px;
   text-align: left;
 
+  box-shadow: 0 0 20px -10px #000000;
   background-color: #ffffff;
 }
 
