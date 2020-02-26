@@ -86,6 +86,8 @@ a {
 .site-navigation .site-link {
   width: 240px;
   padding: 15px 0;
+
+  line-height: 26px;
 }
 
 .site-navigation .site-link:nth-child(4n+3) {
@@ -124,7 +126,7 @@ a {
 }
 
 .welcome-sedona {
-  min-height: 442px;
+  min-height: 373px;
   padding-top: 76px;
   padding-bottom: 59px;
 
@@ -136,8 +138,8 @@ a {
 }
 
 .about-sedona {
-  padding-top: 35px;
-  padding-bottom: 32px;
+  padding-top: 62px;
+  padding-bottom: 34px;
 
   background-color: #ffffff;
 }
@@ -164,7 +166,7 @@ a {
 .reasons-item .reasons-item-container {
   width: 280px;
   padding: 0 60px;
-  padding-top: 35px;
+  padding-top: 30px;
   padding-bottom: 53px;
   background-color: #81b3d2;
 }
@@ -172,7 +174,7 @@ a {
 .reasons-item:nth-child(2) .reasons-item-container {
   width: 304px;
   padding: 0 48px;
-  padding-top: 36px;
+  padding-top: 26px;
   padding-bottom: 52px;
 }
 
@@ -189,6 +191,7 @@ a {
 }
 
 .reasons-item-container .slogan {
+  margin-bottom: 24px;
 
   font-size: 14px;
   font-weight: 400;
@@ -284,7 +287,7 @@ a {
 
 .reasons-list .small-reasons-item {
   width: 208px;
-  padding-top: 30px;
+  padding-top: 44px;
   padding-bottom: 60px;
   padding-left: 95px;
   padding-right: 97px;
@@ -293,11 +296,16 @@ a {
 }
 
 .small-reasons-item .reasons-heading {
+  margin-top: 0;
+  margin-bottom: 26px;
+
   font-size: 21px;
   line-height: 21px;
 }
 
 .small-reasons-item .slogan {
+  margin-top: 20px;
+
   font-weight: 400;
   line-height: 21px;
   color: #333333;
@@ -320,13 +328,14 @@ a {
 }
 
 .visit-sedona {
-  padding-top: 27px;
+  padding-top: 50px;
 
   background-color: #ffffff;
 }
 
 .about-sedona .sedona-is {
-  margin-bottom: 36px;
+  margin: 0;
+  margin-bottom: 28px;
 
   font-size: 21px;
   line-height: 26px;
@@ -339,12 +348,14 @@ a {
 }
 
 .visit-sedona .interested {
+  margin-top: 0;
+  margin-bottom: 24px;
   font-size: 30px;
   line-height: 36px;
 }
 
 .visit-sedona .choose-date {
-  margin-bottom: 48px;
+  margin-bottom: 46px;
 
   font-size: 14px;
   line-height: 24px;
@@ -622,7 +633,8 @@ a {
 
 .search-filtr-form {
   display: flex;
-  padding: 31px 72px;
+  padding: 28px 72px;
+  padding-bottom: 32px;
 
   font-weight: 400;
   color: #ffffff;
@@ -646,11 +658,7 @@ a {
 }
 
 .search-filtr-form .group:first-child {
-  margin-right: 115px;
-}
-
-.search-filtr-form .group:nth-child(2) {
-  margin-left: 14px;
+  margin-right: 117px;
 }
 
 .search-filtr-form .group:last-child {
@@ -660,7 +668,7 @@ a {
 .group-checkbox .checkbox-list {
   margin: 0;
   padding: 0;
-  margin-top: 24px;
+  margin-top: 25px;
 
   text-align: left;
   list-style: none;
@@ -668,7 +676,7 @@ a {
 
 .group-range .minmax-input-list {
   margin: 0;
-  margin-top: 13px;
+  margin-top: 10px;
   padding: 0;
   display: flex;
 
@@ -679,7 +687,7 @@ a {
   position: relative;
 
   margin-top: 20px;
-  width: 314px;
+  width: 318px;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.4);
 }
@@ -730,7 +738,7 @@ a {
 
 .second-slider {
   top: -10px;
-  right: 42px;
+  right: 46px;
 }
 
 
@@ -745,12 +753,13 @@ a {
 .group-range button[type="submit"] {
   box-sizing: border-box;
   display: block;
-  width: 133px;
-  height: 32px;
+  width: 137px;
+  height: 36px;
   border: 2px solid #ffffff;
   border-radius: 2px;
-  margin: 0 auto;
-  margin-top: 24px;
+  padding: 0;
+  margin-top: 32px;
+  margin-left: 84px;
 
   font-size: 14px;
   color: inherit;
@@ -769,8 +778,8 @@ a {
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  width: 157px;
-  height: 32px;
+  width: 159px;
+  height: 36px;
   border: 2px solid white;
 }
 
@@ -841,11 +850,11 @@ input[type="checkbox"]:focus + .checkbox-indicator {
 }
 
 .group-checkbox .checkbox-list-item:not(:first-child) {
-  margin-top: 23px;
+  margin-top: 24px;
 }
 
 .picking {
-  padding: 32px 72px;
+  padding: 30px 72px;
   display: flex;
   align-items: center;
 
@@ -943,9 +952,13 @@ input[type="checkbox"]:focus + .checkbox-indicator {
 .hotels-preview {
   position: relative;
 
-  padding: 30px 0;
+  padding: 25px 0;
   padding-right: 72px;
   padding-left: 237px;
+}
+
+.hotels-preview:not(:last-child) {
+  margin-bottom: 7px;
 }
 
 .hotels-preview .hotels-img {
@@ -959,17 +972,21 @@ input[type="checkbox"]:focus + .checkbox-indicator {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
  .stars-amount svg {
   vertical-align: bottom;
 }
 
+.stars-amount svg:not(:last-child) {
+  margin-right: 6px;
+}
+
 .wrapper-container-2 {
   display: flex;
   flex-direction: row;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 }
 
 .wrapper-container-2 .hotels-information:first-child {
@@ -984,7 +1001,7 @@ input[type="checkbox"]:focus + .checkbox-indicator {
 .hotels-preview .hotels-heading {
   margin: 0;
   padding: 0;
-  width: 800px;
+  width: 500px;
   font-size: 21px;
   line-height: 26px;
   text-align: left;
@@ -1021,6 +1038,10 @@ color: #b2b2b2;
   color: #666666;
 
   background-color: #F2F2F2;
+}
+
+.stars-amount {
+  font-size: 0;
 }
 
 .hotels-preview .additions-button {
@@ -1068,8 +1089,8 @@ color: #b2b2b2;
 
 .main-footer {
   position: relative;
-  text-align: left;
 
+  text-align: left;
   background-color: #fefefe;
 }
 
@@ -1080,7 +1101,7 @@ color: #b2b2b2;
   flex-direction: row;
   align-items: center;
   width: 1056px;
-  padding: 36px 72px;
+  padding: 34px 72px;
 
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -1090,7 +1111,7 @@ color: #b2b2b2;
   flex-direction: row;
   align-items: center;
   width: 1056px;
-  padding: 36px 0;
+  padding: 35px 0;
   margin: 0 auto;
 }
 
@@ -1159,6 +1180,7 @@ color: #b2b2b2;
 
 .made-by .logo-htmlacademy {
   vertical-align: middle;
+  margin-left: 6px;
 }
 
 .made-by a:hover {
