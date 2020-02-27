@@ -9,11 +9,11 @@ var isStorageSupport = true;
 var adultStorage = "";
 var childStorage = "";
 
-button.addEventListener("click", function() {
+button.addEventListener("click", function () {
   form.classList.toggle("search-form-collapsed");
 } );
 
-submitButton.addEventListener("submit", function(evt) {
+form.addEventListener("submit", function (evt) {
   if (!aDate.value || !lDate.value || !adult.value || !child.value) {
     evt.preventDefault();
     console.log("Error!");
