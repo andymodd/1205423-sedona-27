@@ -412,13 +412,14 @@ a {
   box-shadow: 0 0 20px -10px #000000;
   background-color: #ffffff;
 
-  transition: transform 0.6s ease-out;
+  transition: transform 0.4s ease-out;
   transform: scaleY(1);
   transform-origin: top;
 }
 
 .search-form-collapsed {
   transform: scaleY(0);
+  transition: transform;
 }
 
 @keyframes shake {
