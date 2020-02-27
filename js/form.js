@@ -7,7 +7,12 @@ var adult = form.querySelector("[name=adult-amount]");
 var child = form.querySelector("[name=child-amount]");
 var isStorageSupport = true;
 var adultStorage = "";
-var childStorage = "";
+
+try {
+  adultStorage = localStorage.getItem("adult");
+} catch (err) {
+  isStorageSupport = false;
+}
 
 button.addEventListener("click", function () {
   form.classList.toggle("search-form-collapsed");
@@ -16,6 +21,19 @@ button.addEventListener("click", function () {
 form.addEventListener("submit", function (evt) {
   if (!aDate.value || !lDate.value || !adult.value || !child.value) {
     evt.preventDefault();
-    console.log("Error!");
+    form.classList.remove("search-form-shaked");
+    form.offsetWidth = form.offsetWidth;
+    form.classList.add("search-form-shaked");
   }
+  else {
+    if (isStorageSupport) {
+    localStorage.setItem("adult", adult.value);
+    localStorage.setItem("child", child.value);
+    }
+  }
+});
+
+window.addEventListener("load", function () {
+  adult.value = localStorage.getItem("adult");
+  child.value = localStorage.getItem("child");
 });
