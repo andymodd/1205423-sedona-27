@@ -1234,6 +1234,18 @@ a {
   line-height: 26px;
 }
 
+.footer-contacts a {
+  color: inherit;
+}
+
+.footer-contacts a:hover {
+  color: #89b8d5;
+}
+
+.footer-contacts a:active {
+  color: #b2b2b2;
+}
+
 .main-footer .made-by {
   margin: 0;
   margin-right: 29px;
