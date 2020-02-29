@@ -131,11 +131,12 @@ a {
   padding-top: 76px;
   padding-bottom: 59px;
 
-  background-color: #f2f2f2;
   background-image: url("../img/polygon.svg"),
                     url("../img/background-photo.jpg");
-  background-position: bottom center, 0 -56px;
+  background-color: #f2f2f2;
   background-repeat: no-repeat;
+  background-position: center bottom, 0 -56px;
+
 }
 
 .about-sedona {
@@ -503,6 +504,11 @@ a {
   color: #81b3d2;
 
   fill: currentcolor;
+}
+
+.arrival-date input::-ms-clear,
+.leaving-date input::-ms-clear {
+  display: none;
 }
 
 .arrival-date label,
