@@ -668,7 +668,7 @@ a {
 
 .sedona-on-the-map iframe {
   position: absolute;
-
+  display: none;
   vertical-align: top;
 
   border: none;
@@ -1025,6 +1025,12 @@ a {
   padding: 25px 0;
   padding-right: 72px;
   padding-left: 237px;
+
+  border-top: 1px solid #e5e5e5;
+}
+
+.hotels-preview:last-child {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotels-preview:not(:last-child) {
@@ -1173,6 +1179,7 @@ a {
 
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   width: 1056px;
   padding: 34px 72px;
@@ -1185,7 +1192,7 @@ a {
   flex-direction: row;
   align-items: center;
   width: 1056px;
-  padding: 35px 0;
+  padding: 36px 0;
   margin: 0 auto;
 }
 
@@ -1193,16 +1200,13 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
-  width: 400px;
+  width: 150px;
 
   list-style: none;
-}
-
-.socials-list .socials-item:not(:last-child) {
-  margin-right: 6px;
 }
 
 .socials-list .socials-item {
@@ -1210,9 +1214,15 @@ a {
   width: 46px;
 }
 
+.socials-list .socials-item:nth-child(n+4) {
+  margin-bottom: 6px;
+}
+
+
 .footer-contacts {
   margin: 0;
-  padding-left: 52px;
+  margin-left: 52px;
+  margin-right: 124px;
   width: 276px;
 
   font-size: 21px;
@@ -1221,9 +1231,10 @@ a {
 
 .main-footer .made-by {
   margin: 0;
-  padding-left: 100px;
-  width: 228px;
+  margin-right: 29px;
+  margin-left: auto;
 
+  text-align: right;
   line-height: 26px;
   font-weight: normal;
 }
