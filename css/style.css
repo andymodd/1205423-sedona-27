@@ -136,7 +136,6 @@ a {
   background-color: #f2f2f2;
   background-repeat: no-repeat;
   background-position: center bottom, 0 -56px;
-
 }
 
 .about-sedona {
@@ -674,7 +673,6 @@ a {
 
 .sedona-on-the-map iframe {
   position: absolute;
-  display: none;
   vertical-align: top;
 
   border: none;
