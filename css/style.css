@@ -187,6 +187,8 @@ a {
 }
 
 .reasons-item-container .reasons-heading {
+  margin: 21px 34px;
+
   font-size: 21px;
   line-height: 21px;
   color: #ffffff;
@@ -246,9 +248,9 @@ a {
 .additions-list .additions-item:last-child {
   padding-top: 133px;
   padding-bottom: 81px;
-  width: 273px;
-  padding-left: 64px;
-  padding-right: 63px;
+  width: 313px;
+  padding-left: 44px;
+  padding-right: 43px;
 
   background-color: #ffffff;
 }
@@ -319,10 +321,20 @@ a {
   padding-right: 69px;
 }
 
+.small-reasons-item:nth-last-of-type(2) .reasons-heading {
+  margin-left: 51px;
+  margin-right: 51px;
+}
+
 .reasons-list .small-reasons-item:last-child {
-  width: 246px;
+  width: 256px;
   padding-left: 77px;
-  padding-right: 77px;
+  padding-right: 67px;
+}
+
+.small-reasons-item:last-child .reasons-heading {
+  margin-left: 51px;
+  margin-right: 51px;
 }
 
 .small-reasons-item .slogan:last-child {
@@ -338,7 +350,7 @@ a {
 .about-sedona .sedona-is {
   margin: 0;
   margin-bottom: 28px;
-
+  padding: 0 300px;
   font-size: 21px;
   line-height: 26px;
 }
