@@ -1196,10 +1196,11 @@ a {
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  width: 1056px;
-  padding: 32px 72px;
+  width: 975px;
+  padding: 32px 0;
+  padding-left: 124px;
+  padding-right: 101px;
 
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -1208,9 +1209,10 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 1056px;
+  width: 975px;
   padding: 32px 0;
-  margin: 0 auto;
+  padding-left: 124px;
+  padding-right: 101px;
 }
 
 .main-footer .socials-list {
@@ -1246,8 +1248,6 @@ a {
 }
 
 .footer-contacts {
-  margin-left: 57px;
-  margin-right: 119px;
   width: 276px;
 }
 
@@ -1265,8 +1265,6 @@ a {
 
 .main-footer .made-by {
   margin: 0;
-  margin-right: 29px;
-  margin-left: auto;
 
   text-align: right;
   line-height: 26px;
