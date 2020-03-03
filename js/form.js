@@ -33,7 +33,8 @@ form.addEventListener("submit", function (evt) {
   }
 });
 
-window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", function () {
+  form.classList.toggle("search-form-collapsed");
   adult.value = localStorage.getItem("adult");
   child.value = localStorage.getItem("child");
 });
