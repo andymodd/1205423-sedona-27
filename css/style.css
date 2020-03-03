@@ -984,6 +984,13 @@ a {
   cursor: pointer;
 }
 
+.current-sorting-link {
+  font-size: 12px;
+  line-height: 18px;
+  color: #95bed8;
+  text-transform: uppercase;
+}
+
 .sorting-list .sorting-list-item:not(:last-child) {
   margin-right: 33px;
 }
@@ -1015,6 +1022,12 @@ a {
 
 .updown-list-item .updown-link {
   color: #cacaca;
+
+  fill: currentcolor;
+}
+
+.current-updown-link {
+  color: #81b3d2;
 
   fill: currentcolor;
 }
@@ -1346,6 +1359,7 @@ a {
   text-transform: uppercase;
   color: #000000;
 }
+
 .search-form input::-moz-placeholder { /* Firefox 19+ */
   font-size: 14px;
   line-height: 36px;
@@ -1355,6 +1369,7 @@ a {
 
   opacity: 1;
 }
+
 .search-form input:-ms-input-placeholder { /* IE 10+ */
   font-size: 14px;
   line-height: 26px;
@@ -1362,12 +1377,49 @@ a {
   text-transform: uppercase;
   color: #000000;
 }
+
 .search-form input::-moz-placeholder { /* Firefox 18- */
   font-size: 14px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+
+  opacity: 1;
+}
+
+.search-filtr-form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.search-filtr-form input::-moz-placeholder { /* Firefox 19+ */
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  opacity: 1;
+}
+
+.search-filtr-form input:-ms-input-placeholder { /* IE 10+ */
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.search-filtr-form input::-moz-placeholder { /* Firefox 18- */
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
 
   opacity: 1;
 }
