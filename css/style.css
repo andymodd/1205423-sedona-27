@@ -726,7 +726,7 @@ a {
 }
 
 .search-filtr-form .group:first-child {
-  margin-right: 123px;
+  margin-right: 118px;
 }
 
 .search-filtr-form .group:last-child {
@@ -1190,29 +1190,27 @@ a {
   background-color: #fefefe;
 }
 
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1056px;
+  padding: 32px 72px;
+}
+
 .main-footer-container {
   position: absolute;
   bottom: 0;
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 975px;
-  padding: 32px 0;
-  padding-left: 124px;
-  padding-right: 101px;
-
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-.inner-footer-container {
+.socials-list-container {
+  width: 400px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  width: 975px;
-  padding: 32px 0;
-  padding-left: 124px;
-  padding-right: 101px;
 }
 
 .main-footer .socials-list {
@@ -1248,7 +1246,9 @@ a {
 }
 
 .footer-contacts {
-  width: 276px;
+  box-sizing: border-box;
+  width: 328px;
+  padding-left: 60px;
 }
 
 .footer-contacts a {
@@ -1264,8 +1264,10 @@ a {
 }
 
 .main-footer .made-by {
+  box-sizing: border-box;
   margin: 0;
-
+  padding-right: 29px;
+  width: 328px;
   text-align: right;
   line-height: 26px;
   font-weight: normal;
