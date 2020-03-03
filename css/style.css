@@ -1283,7 +1283,7 @@ a {
   margin: 0;
   padding-right: 29px;
   width: 328px;
-  
+
   text-align: right;
   line-height: 26px;
   font-weight: normal;
@@ -1295,7 +1295,7 @@ a {
   align-items: center;
   height: 100%;
 
-  font-size: 0px;
+  font-size: 0;
   color: #ffffff;
 
   fill: currentcolor;
