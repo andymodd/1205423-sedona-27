@@ -718,7 +718,6 @@ a {
   border: none;
   margin: 0;
   padding: 0;
-
 }
 
 .group .group-name {
@@ -852,6 +851,8 @@ a {
 }
 
 .minmax-input-list-item {
+  position: relative;
+
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -872,15 +873,31 @@ a {
 .minmax-input-list-item input {
   box-sizing: border-box;
   height: 22px;
+  width: 153px;
+  padding-left: 85px;
 
   font: inherit;
   color: inherit;
   line-height: 21px;
   text-transform: inherit;
-  text-align: center;
+  text-align: left;
 
   border: none;
   background-color: transparent;
+}
+
+.minmax-input-list-item:first-child::before {
+  position: absolute;
+  content: "От";
+
+  left: 41%;
+}
+
+.minmax-input-list-item:last-child::before {
+  position: absolute;
+  content: "До";
+
+  left: 34%;
 }
 
 .checkbox-list-item {
@@ -890,6 +907,8 @@ a {
 }
 
 .minmax-input-list-item + .minmax-input-list-item input {
+  padding-left: 75px;
+
   border-left: 2px solid white;
   background-color: transparent;
 }
@@ -1188,6 +1207,7 @@ a {
 .hotels-preview .reserve-button {
   box-sizing: border-box;
   padding: 3px 17px;
+  margin-right: 150px;
   width: 142px;
   line-height: 21px;
   color: #FFFFFF;
@@ -1342,84 +1362,4 @@ a {
   color: #bdbbbc;
 
   fill: currentcolor;
-}
-
-.search-form input::placeholder {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.search-form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.search-form input::-moz-placeholder { /* Firefox 19+ */
-  font-size: 14px;
-  line-height: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #000000;
-
-  opacity: 1;
-}
-
-.search-form input:-ms-input-placeholder { /* IE 10+ */
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.search-form input::-moz-placeholder { /* Firefox 18- */
-  font-size: 14px;
-  line-height: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #000000;
-
-  opacity: 1;
-}
-
-.search-filtr-form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.search-filtr-form input::-moz-placeholder { /* Firefox 19+ */
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #ffffff;
-
-  opacity: 1;
-}
-
-.search-filtr-form input:-ms-input-placeholder { /* IE 10+ */
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.search-filtr-form input::-moz-placeholder { /* Firefox 18- */
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #ffffff;
-
-  opacity: 1;
 }

@@ -35,6 +35,12 @@ form.addEventListener("submit", function (evt) {
 
 window.addEventListener("DOMContentLoaded", function () {
   form.classList.toggle("search-form-collapsed");
-  adult.value = localStorage.getItem("adult");
-  child.value = localStorage.getItem("child");
+  var adultStoraged = localStorage.getItem("adult");
+  var childStoraged = localStorage.getItem("adult");
+  if (adultStoraged) {
+    adult.value = adultStoraged;
+  }
+  if (childStoraged) {
+    child.value = childStoraged;
+  }
 });
