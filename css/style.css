@@ -487,6 +487,11 @@ a {
   transition: transform;
 }
 
+.search-form:focus-within {
+  transform: scaleY(1);
+  transition: transform 0.4s ease-out;
+}
+
 @keyframes shake {
   0%,
   100% {
